@@ -418,6 +418,10 @@ header p, header li { cursor: pointer; }
 	margin: 5px;
 	object-fit: cover;
 }
+#list-hbgt article picture {
+	display: flex;
+	flex-direction: column;
+}
 #list-hbgt div a {
 	flex-direction: column;
 	justify-content: space-between;
