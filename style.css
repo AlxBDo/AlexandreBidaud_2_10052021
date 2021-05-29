@@ -175,6 +175,7 @@
 		text-align: center;
 		margin: 5% auto;
 	}
+	main #search form { margin-top: 20px; }
 	#search div {
 		justify-content: center;
 	}
