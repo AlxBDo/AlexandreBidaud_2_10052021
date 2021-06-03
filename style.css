@@ -1,9 +1,3 @@
-:root{
-    --bleu: #0065FC;
-    --bleu-clair: #DEEBFF;
-    --fond-gris: #F2F2F2;
-}
-
 @media (max-width: 785px) {
 	#activ, #info-rslt, #search {
 		padding: 0 5%;
@@ -19,7 +13,7 @@
 		height: 125px;
 	}
 	#cont-list-hbgt aside {
-		background-color: var(--fond-gris);
+		background-color: #F2F2F2;
 	}
 	#cont-list-hbgt aside, #list-hbgt {
 		padding: 2% 5%;
@@ -48,7 +42,7 @@
 		width: 50%;
 		text-align: center;
 		padding: 15px 0;
-		border-bottom: 2px solid var(--fond-gris);
+		border-bottom: 2px solid #F2F2F2;
 	}
 	nav li:hover, nav li:active {
 		border-bottom: 2px solid;
@@ -139,7 +133,7 @@
 	#cont-list-hbgt aside {
 		width: 40%;
 		padding: 0 1%;
-		background-color: var(--fond-gris);
+		background-color: #F2F2F2;
 		border-radius: 10px;
 	}
 	#cont-list-hbgt #list-hbgt {
@@ -265,7 +259,7 @@
 		order: 2;
 	}
 	#hebgmnt aside, #hebgmnt #list-hbgt {
-		background-color: var(--fond-gris);
+		background-color: #F2F2F2;
 		border-radius: 20px;
 		padding: 10px 30px;
 	}
@@ -357,10 +351,10 @@ body {
 }
 
 .eval .bluestar {
-	color: var(--bleu);
+	color: #0065FC;
 }
 footer {
-	background-color: var(--fond-gris);
+	background-color: #F2F2F2;
 }
 h2 {
 	font-size: large;
@@ -375,7 +369,7 @@ header, main {
 header p {
 	margin-left: 30px;
 	margin-top: 30px;
-	color: var(--bleu);
+	color: #0065FC;
 	font-weight: bold;
 }
 header p, header li { cursor: pointer; }
@@ -398,10 +392,10 @@ header p, header li { cursor: pointer; }
 	margin-bottom: 35px;
 }
 #info-rslt i {
-	color: var(--bleu);
+	color: #0065FC;
 	margin-right: 5px;
 	border-radius: 15px;
-	border: 2px solid var(--fond-gris);
+	border: 2px solid #F2F2F2;
 	padding: 5px 9px;
 	font-size: x-small;
 }
@@ -461,7 +455,7 @@ main #activ .vgntt picture img {
 	width: 100%;
 }
 nav li:hover {
-	color: var(--bleu);
+	color: #0065FC;
 }
 nav ul {
     display: flex;
@@ -480,23 +474,27 @@ nav ul {
 }
 #search { margin-bottom: 25px; }
 #search div i {
-	color: var(--bleu);
+	color: #0065FC;
 	border-radius: 60px;
 	text-align: center;
-	background-color: var(--bleu-clair);
+	background-color: #DEEBFF;
 	margin: -5px 5px -6px -11px;
 	width: 40px;
 	line-height: 40px;
 }
 #search div p {
-	border: 2px solid var(--fond-gris);
+	border: 2px solid #F2F2F2;
 	border-radius: 25px;
 	padding: 4px 10px 5px;
 	cursor: pointer;
 	font-weight: bold;
 	border-left: none;
 }
-#search div p:hover { animation: anim-pfiltr 250ms forwards; }
+#search div p:hover {
+	color: #0065FC;
+	border-color: #DEEBFF;
+	transition: all 300ms ease-in-out;
+}
 #search div p:hover i { animation: anim-ifiltr 250ms forwards; }
 #search form {
 	margin: 15px 0 25px;
@@ -504,7 +502,7 @@ nav ul {
 	align-items: center;
 }
 #search form a {
-	background-color: var(--bleu);
+	background-color: #0065FC;
 	color: white;
 	line-height: 40px;
 	font-size: smaller;
@@ -513,7 +511,7 @@ nav ul {
 	cursor: pointer;
 }
 #search form i {
-	background-color: var(--fond-gris);
+	background-color: #F2F2F2;
 	line-height: 40px;
 	width: 45px;
 	text-align: center;
@@ -528,7 +526,7 @@ nav ul {
 	padding: 10px;
 	font-weight: bold;
 	font-family: 'Raleway';
-	border-color: var(--fond-gris);
+	border-color: #F2F2F2;
 	border-style: solid;
 }
 ul { list-style: none; }
@@ -542,15 +540,15 @@ ul { list-style: none; }
 @keyframes anim-ifiltr{
 	0% {
 	  background: radial-gradient(ellipse at center, #deebff 0%,#deebff 99%,#0065fc 100%);
-	  border-top-color: var(--bleu);
+	  border-top-color: #0065FC;
 	}
 	33% {
 	  background: radial-gradient(ellipse at center, #deebff 0%,#deebff 70%,#0065fc 100%);
-	  border-left-color: var(--bleu);
+	  border-left-color: #0065FC;
 	}
 	66% {
 	  background: radial-gradient(ellipse at center, #deebff 0%,#deebff 40%,#0065fc 100%);
-	  border-bottom-color: var(--bleu);
+	  border-bottom-color: #0065FC;
 	}
 	75% {
 	  background: radial-gradient(ellipse at center, #deebff 0%,#0065fc 100%);
@@ -560,23 +558,12 @@ ul { list-style: none; }
 	}
 	85% {
 	  background: radial-gradient(ellipse at center, #deebff 0%,#0065fc 20%,#0065fc 100%);
-	  color: var(--bleu);
+	  color: #0065FC;
 	}
 	100% {
-	  background: var(--bleu);
-	  border-color: var(--bleu);
-	  color: var(--bleu-clair);
+	  background: #0065FC;
+	  border-color: #0065FC;
+	  color: #DEEBFF;
 	  border-width: 2px;
-	}
-  }
-  
-  @keyframes anim-pfiltr{
-	0% { border-top-color: var(--bleu-clair) }
-	33% { border-right-color: var(--bleu-clair) }
-	66% { border-bottom-color: var(--bleu-clair) }
-	100% {
-	  border-color: var(--bleu-clair);
-	  color: var(--bleu);
-	  box-shadow: 0px 0px 3px lightgray;
 	}
   }
