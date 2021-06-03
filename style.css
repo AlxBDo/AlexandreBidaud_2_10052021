@@ -355,13 +355,8 @@ body {
 	color: lightgray;
 	font-size: small;
 }
-.eval.fiv-str {
-	color: var(--bleu);
-}
-.eval.fou-str .fa-star:not(.fa-star:last-child) {
-	color: var(--bleu);
-}
-.eval.thr-str .fa-star:not(.fa-star:last-child, .fa-star:nth-of-type(4)) {
+
+.eval .bluestar {
 	color: var(--bleu);
 }
 footer {
@@ -428,10 +423,10 @@ header p, header li { cursor: pointer; }
 	justify-content: space-between;
 	margin-bottom: 25px;
 }
-#list-hbgt p:last-child:not(a p) {
+#list-hbgt > p:last-child {
 	margin: 5px 0 25px;
 }
-#list-hbgt p:last-child a {
+#list-hbgt > p:last-child a {
 	font-weight: bold;
 	font-size: smaller;
 }
