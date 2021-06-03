@@ -358,10 +358,10 @@ body {
 .eval.fiv-str {
 	color: var(--bleu);
 }
-.eval.fou-str i:not(i:last-child) {
+.eval.fou-str .fa-star:not(.fa-star:last-child) {
 	color: var(--bleu);
 }
-.eval.thr-str i:not(i:last-child, i:nth-of-type(4)) {
+.eval.thr-str .fa-star:not(.fa-star:last-child, .fa-star:nth-of-type(4)) {
 	color: var(--bleu);
 }
 footer {
