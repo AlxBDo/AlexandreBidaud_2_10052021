@@ -571,15 +571,9 @@ ul { list-style: none; }
   }
   
   @keyframes anim-pfiltr{
-	0% {
-	  border-top-color: var(--bleu-clair);
-	}
-	33% {
-	  border-right-color: var(--bleu-clair);
-	}
-	66% {
-	  border-bottom-color: var(--bleu-clair);
-	}
+	0% { border-top-color: var(--bleu-clair) }
+	33% { border-right-color: var(--bleu-clair) }
+	66% { border-bottom-color: var(--bleu-clair) }
 	100% {
 	  border-color: var(--bleu-clair);
 	  color: var(--bleu);
